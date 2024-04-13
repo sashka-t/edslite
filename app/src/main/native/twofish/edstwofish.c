@@ -5,6 +5,7 @@
 #include "com_sovworks_eds_crypto_blockciphers_Twofish.h"
 #include <stdlib.h>
 #include <malloc.h>
+#include <string.h>
 //#include <android/log.h>
 
 #include <block_cipher.h>

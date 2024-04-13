@@ -12,6 +12,7 @@
 #include <sys/un.h>
 #include <sys/stat.h>
 #include <android/log.h>
+#include <unistd.h>
 
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, "EDS (native code fdraio)", __VA_ARGS__);
 #ifdef DEBUG

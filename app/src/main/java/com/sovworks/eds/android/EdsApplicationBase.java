@@ -11,6 +11,7 @@ import android.os.SystemClock;
 import android.widget.Toast;
 
 import androidx.localbroadcastmanager.content.LocalBroadcastManager; // Updated for AndroidX
+import androidx.multidex.MultiDexApplication;
 
 import com.sovworks.eds.android.helpers.ExtendedFileInfoLoader;
 import com.sovworks.eds.android.providers.MainContentProvider;
@@ -31,7 +32,7 @@ import java.util.regex.Pattern;
 
 import static com.sovworks.eds.android.settings.UserSettings.getSettings;
 
-public class EdsApplicationBase extends Application { // Changed from MultiDexApplication to Application
+public class EdsApplicationBase extends MultiDexApplication { // Changed from MultiDexApplication to Application
 	public static final String BROADCAST_EXIT = "com.sovworks.eds.android.BROADCAST_EXIT";
 
 	public static void stopProgramBase(Context context, boolean removeNotifications) {
